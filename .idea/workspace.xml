@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96984a5b-d13d-49e8-a14a-fe54077eb8ac" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/apivet/Veterinaria/VeterinariaApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/apivet/Veterinaria/controllers/ProductoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/apivet/Veterinaria/entidades/Producto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/apivet/Veterinaria/VeterinariaApplicationTests.java" beforeDir="false" />
+    <list default="true" id="96984a5b-d13d-49e8-a14a-fe54077eb8ac" name="Changes" comment="Cambios de php">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Http/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Request.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,11 +73,25 @@
       <option name="presentableId" value="Default" />
       <updated>1791308941796</updated>
       <workItem from="1791308943108" duration="1627000" />
-      <workItem from="1791314986770" duration="323000" />
+      <workItem from="1791314986770" duration="463000" />
+      <workItem from="1791315567035" duration="5621000" />
     </task>
+    <task id="LOCAL-00001" summary="Cambios de php">
+      <option name="closed" value="true" />
+      <created>1791315343519</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1791315343519</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Cambios de php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios de php" />
   </component>
 </project>

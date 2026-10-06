@@ -6,5 +6,14 @@ final class Request {
     public function path(): string { return parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/'; }
     public function query(string $key, ?string $default = null): ?string { return $_GET[$key] ?? $default; }
     public function body(): array { $body = json_decode(file_get_contents('php://input'), true); return is_array($body) ? $body : []; }
-    public function bearerToken(): ?string { $header = $_SERVER['HTTP_AUTHORIZATION'] ?? ''; return preg_match('/^Bearer\s+(.+)$/i', $header, $match) ? $match[1] : null; }
+    public function bearerToken(): ?string {
+        // Apache/XAMPP a veces no expone Authorization en HTTP_AUTHORIZATION: se prueban otras fuentes.
+        $header = $_SERVER['HTTP_AUTHORIZATION'] ?? $_SERVER['REDIRECT_HTTP_AUTHORIZATION'] ?? '';
+        if ($header === '' && function_exists('getallheaders')) {
+            foreach (getallheaders() as $name => $value) {
+                if (strcasecmp((string)$name, 'Authorization') === 0) { $header = (string)$value; break; }
+            }
+        }
+        return preg_match('/^Bearer\s+(.+)$/i', $header, $match) ? $match[1] : null;
+    }
 }
